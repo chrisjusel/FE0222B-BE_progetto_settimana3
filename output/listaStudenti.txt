@@ -1,0 +1,100 @@
+
+id: 1 Marco Rossi (m)
+Voti:
+Educazione fisica: 8, 9, 7, 
+Tecnologia: 5, 4, 4, 
+Storia: 6, 8, 4, 7, 9, 5, 
+Geografia: 6, 
+Inglese: 6, 10, 7, 
+Matematica: 3, 2, 4, 
+Italiano: 5, 7, 9, 10, 2, 
+
+id: 2 Luisa Neri (f)
+Voti:
+Educazione fisica: 2, 7, 
+Tecnologia: 3, 4, 2, 3, 
+Storia: 3, 10, 9, 5, 
+Geografia: 6, 5, 6, 2, 
+Inglese: 10, 2, 3, 4, 8, 
+Matematica: 8, 7, 9, 
+Italiano: 2, 4, 3, 
+
+id: 3 Luigi Rossi (m)
+Voti:
+Educazione fisica: 3, 
+Tecnologia: 8, 9, 
+Storia: 9, 7, 8, 
+Geografia: 6, 5, 
+Inglese: 6, 2, 3, 
+Matematica: 5, 6, 
+Italiano: 7, 8, 6, 
+
+id: 4 Pasquale Bianchi (m)
+Voti:
+Educazione fisica: 8, 
+Tecnologia: 6, 3, 2, 6, 
+Storia: 9, 5, 6, 4, 
+Geografia: 3, 4, 6, 8, 
+Inglese: 2, 10, 8, 3, 4, 
+Matematica: 6, 7, 1, 
+Italiano: 3, 5, 9, 
+
+id: 5 Chiara Verdi (f)
+Voti:
+Educazione fisica: 8, 
+Tecnologia: 10, 8, 9, 5, 
+Storia: 7, 8, 9, 7, 
+Geografia: 5, 5, 5, 6, 
+Inglese: 8, 9, 10, 
+Matematica: 10, 8, 
+Italiano: 6, 7, 9, 
+
+id: 1 Giacolo Marroni (m)
+Voti:
+Educazione fisica: 8, 7, 
+Tecnologia: 5, 6, 2, 
+Storia: 4, 5, 5, 2, 5, 
+Geografia: 6, 6, 
+Inglese: 6, 4, 7, 
+Matematica: 1, 4, 7, 
+Italiano: 5, 7, 9, 10, 2, 
+
+id: 2 Lidia Arancioni (f)
+Voti:
+Educazione fisica: 8, 7, 
+Tecnologia: 5, 9, 8, 
+Storia: 7, 6, 6, 5, 5, 
+Geografia: 3, 4, 
+Inglese: 8, 2, 4, 
+Matematica: 4, 5, 7, 
+Italiano: 8, 8, 8, 
+
+id: 3 Lino Gialli (m)
+Voti:
+Educazione fisica: 6, 3, 
+Tecnologia: 6, 8, 4, 
+Storia: 5, 7, 6, 5, 6, 
+Geografia: 3, 5, 
+Inglese: 4, 2, 6, 
+Matematica: 7, 1, 6, 
+Italiano: 6, 7, 3, 
+
+id: 4 Mario Azzurri (m)
+Voti:
+Educazione fisica: 4, 7, 
+Tecnologia: 9, 6, 8, 
+Storia: 4, 6, 7, 2, 2, 
+Geografia: 6, 7, 
+Inglese: 6, 7, 3, 
+Matematica: 7, 2, 6, 
+Italiano: 7, 3, 3, 
+
+id: 5 Carla Grigi (f)
+Voti:
+Educazione fisica: 7, 
+Tecnologia: 9, 4, 2, 
+Storia: 7, 5, 2, 6, 7, 
+Geografia: 8, 4, 
+Inglese: 8, 8, 8, 
+Matematica: 6, 5, 10, 
+Italiano: 8, 8, 9, 

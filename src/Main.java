@@ -1,0 +1,274 @@
+import java.io.File;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Main {
+	
+	public static void main(String[] args) {
+
+		Studente s1 = new Studente("Marco", "Rossi", 'm');
+		Studente s2 = new Studente("Luisa", "Neri", 'f');
+		Studente s3 = new Studente("Luigi", "Rossi", 'm');
+		Studente s4 = new Studente("Pasquale", "Bianchi", 'm');
+		Studente s5 = new Studente("Chiara", "Verdi", 'f');
+		
+		Studente s6 = new Studente("Giacolo", "Marroni", 'm');
+		Studente s7 = new Studente("Lidia", "Arancioni", 'f');
+		Studente s8 = new Studente("Lino", "Gialli", 'm');
+		Studente s9 = new Studente("Mario", "Azzurri", 'm');
+		Studente s0 = new Studente("Carla", "Grigi", 'f');
+		
+		ScuolaImpl scuola = new ScuolaImpl();
+		ScuolaImpl scuola1 = new ScuolaImpl();
+		
+		scuola.registraStudente(s1);
+		scuola.registraStudente(s2);
+		scuola.registraStudente(s3);
+		scuola.registraStudente(s4);
+		scuola.registraStudente(s5);
+		
+		scuola1.registraStudente(s6);
+		scuola1.registraStudente(s7);
+		scuola1.registraStudente(s8);
+		scuola1.registraStudente(s9);
+		scuola1.registraStudente(s0);
+		
+		scuola.registraVoto(s1, "Educazione fisica", 8);
+		scuola.registraVoto(s1, "Educazione fisica", 9);
+		scuola.registraVoto(s1, "Educazione fisica", 7);
+		scuola.registraVoto(s1, "Tecnologia", 5);
+		scuola.registraVoto(s1, "Tecnologia", 4);
+		scuola.registraVoto(s1, "Tecnologia", 4);
+		scuola.registraVoto(s1, "Storia", 6);
+		scuola.registraVoto(s1, "Storia", 8);
+		scuola.registraVoto(s1, "Storia", 4);
+		scuola.registraVoto(s1, "Storia", 7);
+		scuola.registraVoto(s1, "Storia", 9);
+		scuola.registraVoto(s1, "Geografia", 6);
+		scuola.registraVoto(s1, "Storia", 5);
+		scuola.registraVoto(s1, "Inglese", 6);
+		scuola.registraVoto(s1, "Inglese", 10);
+		scuola.registraVoto(s1, "Inglese", 7);
+		scuola.registraVoto(s1, "Matematica", 3);
+		scuola.registraVoto(s1, "Matematica", 2);
+		scuola.registraVoto(s1, "Matematica", 4);
+		scuola.registraVoto(s1, "Italiano", 5);
+		scuola.registraVoto(s1, "Italiano", 7);
+		scuola.registraVoto(s1, "Italiano", 9);
+		scuola.registraVoto(s1, "Italiano", 10);
+		scuola.registraVoto(s1, "Italiano", 2);
+		
+		scuola.registraVoto(s2, "Educazione fisica", 2);
+		scuola.registraVoto(s2, "Educazione fisica", 7);
+		scuola.registraVoto(s2, "Tecnologia", 3);
+		scuola.registraVoto(s2, "Tecnologia", 4);
+		scuola.registraVoto(s2, "Tecnologia", 2);
+		scuola.registraVoto(s2, "Tecnologia", 3);
+		scuola.registraVoto(s2, "Storia", 3);
+		scuola.registraVoto(s2, "Storia", 10);;
+		scuola.registraVoto(s2, "Storia", 9);
+		scuola.registraVoto(s2, "Geografia", 6);
+		scuola.registraVoto(s2, "Geografia", 5);
+		scuola.registraVoto(s2, "Geografia", 6);
+		scuola.registraVoto(s2, "Geografia", 2);
+		scuola.registraVoto(s2, "Storia", 5);
+		scuola.registraVoto(s2, "Inglese", 10);
+		scuola.registraVoto(s2, "Inglese", 2);
+		scuola.registraVoto(s2, "Inglese", 3);
+		scuola.registraVoto(s2, "Inglese", 4);
+		scuola.registraVoto(s2, "Inglese", 8);
+		scuola.registraVoto(s2, "Matematica", 8);
+		scuola.registraVoto(s2, "Matematica", 7);
+		scuola.registraVoto(s2, "Matematica", 9);
+		scuola.registraVoto(s2, "Italiano", 2);
+		scuola.registraVoto(s2, "Italiano", 4);
+		scuola.registraVoto(s2, "Italiano", 3);
+		
+		scuola.registraVoto(s3, "Educazione fisica", 3);
+		scuola.registraVoto(s3, "Tecnologia", 8);
+		scuola.registraVoto(s3, "Tecnologia", 9);
+		scuola.registraVoto(s3, "Storia", 9);
+		scuola.registraVoto(s3, "Geografia", 6);
+		scuola.registraVoto(s3, "Geografia", 5);
+		scuola.registraVoto(s3, "Storia", 7);
+		scuola.registraVoto(s3, "Storia",8);
+		scuola.registraVoto(s3, "Inglese", 6);
+		scuola.registraVoto(s3, "Inglese", 2);
+		scuola.registraVoto(s3, "Inglese", 3);
+		scuola.registraVoto(s3, "Matematica", 5);
+		scuola.registraVoto(s3, "Matematica", 6);
+		scuola.registraVoto(s3, "Italiano", 7);
+		scuola.registraVoto(s3, "Italiano", 8);
+		scuola.registraVoto(s3, "Italiano", 6);
+		
+		scuola.registraVoto(s4, "Educazione fisica", 8);
+		scuola.registraVoto(s4, "Tecnologia", 6);
+		scuola.registraVoto(s4, "Tecnologia", 3);
+		scuola.registraVoto(s4, "Tecnologia", 2);
+		scuola.registraVoto(s4, "Tecnologia", 6);
+		scuola.registraVoto(s4, "Storia", 9);
+		scuola.registraVoto(s4, "Storia", 5);;
+		scuola.registraVoto(s4, "Storia", 6);
+		scuola.registraVoto(s4, "Geografia", 3);
+		scuola.registraVoto(s4, "Geografia", 4);
+		scuola.registraVoto(s4, "Geografia", 6);
+		scuola.registraVoto(s4, "Geografia", 8);
+		scuola.registraVoto(s4, "Storia", 4);
+		scuola.registraVoto(s4, "Inglese", 2);
+		scuola.registraVoto(s4, "Inglese", 10);
+		scuola.registraVoto(s4, "Inglese", 8);
+		scuola.registraVoto(s4, "Inglese", 3);
+		scuola.registraVoto(s4, "Inglese", 4);
+		scuola.registraVoto(s4, "Matematica", 6);
+		scuola.registraVoto(s4, "Matematica", 7);
+		scuola.registraVoto(s4, "Matematica", 1);
+		scuola.registraVoto(s4, "Italiano", 3);
+		scuola.registraVoto(s4, "Italiano", 5);
+		scuola.registraVoto(s4, "Italiano", 9);
+		
+		scuola.registraVoto(s5, "Educazione fisica", 8);
+		scuola.registraVoto(s5, "Tecnologia", 10);
+		scuola.registraVoto(s5, "Tecnologia", 8);
+		scuola.registraVoto(s5, "Tecnologia", 9);
+		scuola.registraVoto(s5, "Tecnologia", 5);
+		scuola.registraVoto(s5, "Storia", 7);
+		scuola.registraVoto(s5, "Storia", 8);;
+		scuola.registraVoto(s5, "Storia", 9);
+		scuola.registraVoto(s5, "Geografia", 5);
+		scuola.registraVoto(s5, "Geografia", 5);
+		scuola.registraVoto(s5, "Geografia", 5);
+		scuola.registraVoto(s5, "Geografia", 6);
+		scuola.registraVoto(s5, "Storia", 7);
+		scuola.registraVoto(s5, "Inglese", 8);
+		scuola.registraVoto(s5, "Inglese", 9);
+		scuola.registraVoto(s5, "Inglese", 10);
+		scuola.registraVoto(s5, "Matematica", 10);
+		scuola.registraVoto(s5, "Matematica", 8);
+		scuola.registraVoto(s5, "Italiano", 6);
+		scuola.registraVoto(s5, "Italiano", 7);
+		scuola.registraVoto(s5, "Italiano", 9);
+		
+		scuola1.registraVoto(s6, "Educazione fisica", 8);
+		scuola1.registraVoto(s6, "Educazione fisica", 7);
+		scuola1.registraVoto(s6, "Tecnologia", 5);
+		scuola1.registraVoto(s6, "Tecnologia", 6);
+		scuola1.registraVoto(s6, "Tecnologia", 2);
+		scuola1.registraVoto(s6, "Storia", 4);
+		scuola1.registraVoto(s6, "Storia", 5);
+		scuola1.registraVoto(s6, "Storia", 5);
+		scuola1.registraVoto(s6, "Storia", 2);
+		scuola1.registraVoto(s6, "Geografia", 6);
+		scuola1.registraVoto(s6, "Geografia", 6);
+		scuola1.registraVoto(s6, "Storia", 5);
+		scuola1.registraVoto(s6, "Inglese", 6);
+		scuola1.registraVoto(s6, "Inglese", 4);
+		scuola1.registraVoto(s6, "Inglese", 7);
+		scuola1.registraVoto(s6, "Matematica", 1);
+		scuola1.registraVoto(s6, "Matematica", 4);
+		scuola1.registraVoto(s6, "Matematica", 7);
+		scuola1.registraVoto(s6, "Italiano", 5);
+		scuola1.registraVoto(s6, "Italiano", 7);
+		scuola1.registraVoto(s6, "Italiano", 9);
+		scuola1.registraVoto(s6, "Italiano", 10);
+		scuola1.registraVoto(s6, "Italiano", 2);
+		
+		scuola1.registraVoto(s7, "Educazione fisica", 8);
+		scuola1.registraVoto(s7, "Educazione fisica", 7);
+		scuola1.registraVoto(s7, "Tecnologia", 5);
+		scuola1.registraVoto(s7, "Tecnologia", 9);
+		scuola1.registraVoto(s7, "Tecnologia", 8);
+		scuola1.registraVoto(s7, "Storia", 7);
+		scuola1.registraVoto(s7, "Storia", 6);
+		scuola1.registraVoto(s7, "Storia", 6);
+		scuola1.registraVoto(s7, "Storia", 5);
+		scuola1.registraVoto(s7, "Geografia", 3);
+		scuola1.registraVoto(s7, "Geografia", 4);
+		scuola1.registraVoto(s7, "Storia", 5);
+		scuola1.registraVoto(s7, "Inglese", 8);
+		scuola1.registraVoto(s7, "Inglese", 2);
+		scuola1.registraVoto(s7, "Inglese", 4);
+		scuola1.registraVoto(s7, "Matematica", 4);
+		scuola1.registraVoto(s7, "Matematica", 5);
+		scuola1.registraVoto(s7, "Matematica", 7);
+		scuola1.registraVoto(s7, "Italiano", 8);
+		scuola1.registraVoto(s7, "Italiano", 8);
+		scuola1.registraVoto(s7, "Italiano", 8);
+		
+		scuola1.registraVoto(s8, "Educazione fisica", 6);
+		scuola1.registraVoto(s8, "Educazione fisica", 3);
+		scuola1.registraVoto(s8, "Tecnologia", 6);
+		scuola1.registraVoto(s8, "Tecnologia", 8);
+		scuola1.registraVoto(s8, "Tecnologia", 4);
+		scuola1.registraVoto(s8, "Storia", 5);
+		scuola1.registraVoto(s8, "Storia", 7);
+		scuola1.registraVoto(s8, "Storia", 6);
+		scuola1.registraVoto(s8, "Storia", 5);
+		scuola1.registraVoto(s8, "Geografia", 3);
+		scuola1.registraVoto(s8, "Geografia", 5);
+		scuola1.registraVoto(s8, "Storia", 6);
+		scuola1.registraVoto(s8, "Inglese", 4);
+		scuola1.registraVoto(s8, "Inglese", 2);
+		scuola1.registraVoto(s8, "Inglese", 6);
+		scuola1.registraVoto(s8, "Matematica", 7);
+		scuola1.registraVoto(s8, "Matematica", 1);
+		scuola1.registraVoto(s8, "Matematica", 6);
+		scuola1.registraVoto(s8, "Italiano", 6);
+		scuola1.registraVoto(s8, "Italiano", 7);
+		scuola1.registraVoto(s8, "Italiano", 3);
+		
+		scuola1.registraVoto(s9, "Educazione fisica", 4);
+		scuola1.registraVoto(s9, "Educazione fisica", 7);
+		scuola1.registraVoto(s9, "Tecnologia", 9);
+		scuola1.registraVoto(s9, "Tecnologia", 6);
+		scuola1.registraVoto(s9, "Tecnologia", 8);
+		scuola1.registraVoto(s9, "Storia", 4);
+		scuola1.registraVoto(s9, "Storia", 6);
+		scuola1.registraVoto(s9, "Storia", 7);
+		scuola1.registraVoto(s9, "Storia", 2);
+		scuola1.registraVoto(s9, "Geografia", 6);
+		scuola1.registraVoto(s9, "Geografia", 7);
+		scuola1.registraVoto(s9, "Storia", 2);
+		scuola1.registraVoto(s9, "Inglese", 6);
+		scuola1.registraVoto(s9, "Inglese", 7);
+		scuola1.registraVoto(s9, "Inglese", 3);
+		scuola1.registraVoto(s9, "Matematica", 7);
+		scuola1.registraVoto(s9, "Matematica", 2);
+		scuola1.registraVoto(s9, "Matematica", 6);
+		scuola1.registraVoto(s9, "Italiano", 7);
+		scuola1.registraVoto(s9, "Italiano", 3);
+		scuola1.registraVoto(s9, "Italiano", 3);
+		
+		scuola1.registraVoto(s0, "Educazione fisica", 7);
+		scuola1.registraVoto(s0, "Tecnologia", 9);
+		scuola1.registraVoto(s0, "Tecnologia", 4);
+		scuola1.registraVoto(s0, "Tecnologia", 2);
+		scuola1.registraVoto(s0, "Storia", 7);
+		scuola1.registraVoto(s0, "Storia", 5);
+		scuola1.registraVoto(s0, "Storia", 2);
+		scuola1.registraVoto(s0, "Storia", 6);
+		scuola1.registraVoto(s0, "Geografia", 8);
+		scuola1.registraVoto(s0, "Geografia", 4);
+		scuola1.registraVoto(s0, "Storia", 7);
+		scuola1.registraVoto(s0, "Inglese", 8);
+		scuola1.registraVoto(s0, "Inglese", 8);
+		scuola1.registraVoto(s0, "Inglese", 8);
+		scuola1.registraVoto(s0, "Matematica", 6);
+		scuola1.registraVoto(s0, "Matematica", 5);
+		scuola1.registraVoto(s0, "Matematica", 10);
+		scuola1.registraVoto(s0, "Italiano", 8);
+		scuola1.registraVoto(s0, "Italiano", 8);
+		scuola1.registraVoto(s0, "Italiano", 9);
+		
+		File file = new File("output/listaStudenti.txt");
+		scuola.salvaStudenti(file, false);
+		scuola1.salvaStudenti(file, true);
+		
+		StampaThread st = new StampaThread(scuola);
+		StampaThread st1 = new StampaThread(scuola1);
+		
+		st.start();
+		st1.start();
+		
+	}
+
+}
