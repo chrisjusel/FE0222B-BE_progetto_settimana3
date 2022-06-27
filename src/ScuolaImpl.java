@@ -21,7 +21,7 @@ public class ScuolaImpl implements Scuola {
 		//inizializzo un arraylist a null
 		if(studenti != null) {
 			//se l'arraylist di studenti non è null
-			tmp = studenti;
+			tmp = (ArrayList<Studente>)studenti.stream().collect(Collectors.toList());
 			//faccio una copia di studenti in tmp
 		}
 		return tmp;
